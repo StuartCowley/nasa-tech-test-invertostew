@@ -1,5 +1,9 @@
-#search {
-  margin: auto;
+.search-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-form__input {
   width: 20%;
   height: 50px;
   border-radius: 11px;
