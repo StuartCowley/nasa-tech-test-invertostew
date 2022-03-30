@@ -9,7 +9,7 @@ function SearchResults({ searchResults }) {
     <>
       <p>Search Results</p>
       {searchResults.map((src) => (
-        <img src={src} alt="" />
+        <img key={src} src={src} alt="" />
       ))}
     </>
   );
