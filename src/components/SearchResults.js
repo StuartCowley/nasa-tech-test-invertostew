@@ -8,7 +8,9 @@ function SearchResults({ searchResults }) {
   return (
     <>
       <p>Search Results</p>
-      {searchResults.map((e) => console.log(e))}
+      {searchResults.map((src) => (
+        <img src={src} alt="" />
+      ))}
     </>
   );
 }
