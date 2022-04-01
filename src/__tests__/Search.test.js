@@ -8,13 +8,15 @@ describe("Search", () => {
   };
 
   it("renders correctly", () => {
-    const { asFragment } = render(<Search setSearchText={validProps} />);
+    const { asFragment } = render(
+      <Search setSearchResults={validProps.setSearchResults} />
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders the input element", () => {
-    render(<Search setSearchText={validProps} />);
+    render(<Search setSearchResults={validProps.setSearchResults} />);
 
     const input = screen.getByPlaceholderText(/search/i);
 
@@ -22,7 +24,7 @@ describe("Search", () => {
   });
 
   it("renders the button", () => {
-    render(<Search setSearchText={validProps} />);
+    render(<Search setSearchResults={validProps.setSearchResults} />);
 
     const button = screen.getByText(/search/i);
 

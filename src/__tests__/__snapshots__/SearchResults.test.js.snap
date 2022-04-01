@@ -14,19 +14,19 @@ exports[`Search renders correctly 1`] = `
       alt=""
       class="search-results-img"
       data-testid="image"
-      src="#"
+      src="#1"
     />
     <img
       alt=""
       class="search-results-img"
       data-testid="image"
-      src="#"
+      src="#2"
     />
     <img
       alt=""
       class="search-results-img"
       data-testid="image"
-      src="#"
+      src="#3"
     />
   </div>
 </DocumentFragment>

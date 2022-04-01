@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import SearchResults from "../components/SearchResults";
 
 describe("Search", () => {
-  const validProps = ["#", "#", "#"];
+  const validProps = ["#1", "#2", "#3"];
 
   it("renders correctly", () => {
     const { asFragment } = render(<SearchResults searchResults={validProps} />);
