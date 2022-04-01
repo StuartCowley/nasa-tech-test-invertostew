@@ -19,5 +19,7 @@
     flex: calc(33.333% - 1rem);
     max-width: calc(33.333% - 1rem);
     padding: 0 0.5rem;
+    max-height: 300px;
+    object-fit: cover;
   }
 }
