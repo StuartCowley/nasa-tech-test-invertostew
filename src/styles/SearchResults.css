@@ -23,3 +23,24 @@
     object-fit: cover;
   }
 }
+
+@media (min-width: 1024px) {
+  .search-results-img {
+    flex: calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .search-results-img {
+    flex: calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+  }
+}
+
+@media (min-width: 1536px) {
+  .search-results-img {
+    flex: calc(16.666667% - 1rem);
+    max-width: calc(16.666667% - 1rem);
+  }
+}
