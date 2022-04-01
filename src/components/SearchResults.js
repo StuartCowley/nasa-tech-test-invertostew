@@ -12,7 +12,13 @@ function SearchResults({ searchResults }) {
       <h3 className="search-results">Search Results</h3>
       <div className="search-results__container">
         {searchResults.map((src) => (
-          <img key={src} src={src} alt="" className="search-results-img" />
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className="search-results-img"
+            data-testid="image"
+          />
         ))}
       </div>
     </>
