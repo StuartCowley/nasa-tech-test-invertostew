@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# MCR Codes NASA Tech Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created to get a feel for what a tech test might look like in the industry.
 
-## Available Scripts
+## Task
 
-In the project directory, you can run:
+Build and design a search page which allows users to search for images by keyword using the NASA image API.
 
-### `npm start`
+**Brief:**
+* Build a search page which allows users to search for images by keyword.
+* Images must be returned upon a successful search.
+* The styling is up to you but will be taken into consideration when evaluating your application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Mobile Version](./__screenshots__/mobile.png)
+![Desktop Version](./__screenshots__/desktop.png)
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application was built using the [React](https://reactjs.org/) library using a functional component approach.
 
-### `npm run build`
+## Testing Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I took a BDD approach when it came to testing the application, first building the component and implementing the required features, and then testing against the acceptance criteria.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Testing libraries include:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Jest](https://jestjs.io/)
+* [React Testing Library](https://testing-library.com/)
 
-### `npm run eject`
+## Packages Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In addition to the testing libraries mentioned above:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* ESLint - used to follow industry standard rules with some slight configurations.
+* Prettier - used to ensure consistency in code formatting.
+* Prop Types - used to type check this React application and catch errors before runtime.
+* Axios - used to make requests to the NASA API endpoint.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Clone this repo
+  * e.g. `git@github.com:invertostew/nasa-tech-test.git`
+* Change directory into the repo
+  * e.g. `cd nasa-tech-test` (or the directory you specified the repo to be cloned into)
+* Install the dependencies from `package-lock.json`
+  * `npm install`
+* To start the app:
+  * `npm start`
+* To test the app:
+  * `npm test`
 
-## Learn More
+## If I Had More Time
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I would like to implement:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Organise the image search results in a masonry layout, allowing me to remove the `max-height` property on the images, and allowing for a better flow. I would do this by splitting the results into separate columns allowing for better control.
+* Write tests for the `getImages` request function.
+* Add some UI helpers such as providing the user with some tags that they can click to search common terms.
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was authored by Stuart Green.

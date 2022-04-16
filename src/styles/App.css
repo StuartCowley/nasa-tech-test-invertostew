@@ -1,0 +1,19 @@
+.nasa-app {
+  padding: 2rem;
+}
+
+.nasa-app__logo {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .nasa-app {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .nasa-app__logo {
+    max-width: 500px;
+  }
+}
